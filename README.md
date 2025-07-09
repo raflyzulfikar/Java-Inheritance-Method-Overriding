@@ -91,3 +91,8 @@ To run this program, you need to have the Java Development Kit (JDK) installed o
     ```
     java -cp src Main
     ```
+## Important Notes and Potential Enhancements
+* **Class Naming Convention:** The class names such as `Vehiclee`, `Carr`, `Motorcyclee`, and `Truckk` deviate from standard Java naming conventions (which typically use singular nouns and start with an uppercase letter, e.g., `Vehicle`, `Car`, `Motorcycle`, `Truck`). Adhering to these conventions would improve code readability and maintainability for future development.
+* **Further Encapsulation:** Attributes using `protected` in `Vehiclee` (like `brand`, `model`, `year`) could be made `private` and accessed through `public` getter methods (`getBrand()`, `getModel()`, `getYear()`) for stricter encapsulation and better control over data access.
+* **Polymorphism Demonstration:** To demonstrate polymorphism more explicitly, one could create an array or `List` of type `Vehiclee` and store various `Carr`, `Motorcyclee`, or `Truckk` objects within it. Then, iterating through the list and calling the `move()` method on each `Vehiclee` object would showcase how the correct overridden method is invoked at *runtime*.
+* **Additional Functionality:** The functionality of each vehicle could be expanded by adding more methods (e.g., `refuel()`, `startEngine()`, `checkTirePressure()`), or by introducing new attributes that define more complex behaviors.
